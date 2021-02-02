@@ -1,6 +1,6 @@
 package usuarios;
 
-public class Persona 
+public abstract class Persona 
 {
 	private String nombre;
 	private String apellido1;
@@ -9,12 +9,12 @@ public class Persona
 	private String dni;
 	private String user;
 	private String password;
-	private String tipopersona;
 	private String email;
+	private String tipopersona;
 	
 	
 	public Persona(String nombre, String apellido1, String apellido2, int edad, String dni, String user,
-			String password, String tipopersona, String email) {
+			String password, String email, String tipopersona) {
 		super();
 		this.nombre = nombre;
 		this.apellido1 = apellido1;
@@ -23,8 +23,8 @@ public class Persona
 		this.dni = dni;
 		this.user = user;
 		this.password = password;
-		this.tipopersona = tipopersona;
 		this.email = email;
+		this.tipopersona = tipopersona;
 	}
 	
 	public Persona ()
@@ -88,20 +88,20 @@ public class Persona
 		this.password = password;
 	}
 
-	public String getTipopersona() {
-		return tipopersona;
-	}
-
-	public void setTipopersona(String tipopersona) {
-		this.tipopersona = tipopersona;
-	}
-
 	public String getEmail() {
 		return email;
 	}
 
 	public void setEmail(String email) {
 		this.email = email;
+	}
+
+	public String getTipopersona() {
+		return tipopersona;
+	}
+
+	public void setTipopersona(String tipopersona) {
+		this.tipopersona = tipopersona;
 	}
 	
 	
